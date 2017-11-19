@@ -5,7 +5,7 @@
     * install/require  dependecies
         * ```javascript
             npm install --save-dev
-        ```
+            ```
         * express, sequelize, body-parser, morgan, chalk, pg@6, nodemon, nunjucks
     * create Folders/Files
         * index.js
@@ -35,13 +35,13 @@
             app.listen(PORT, () => {
                 console.log(chalk.blue(`Listening on PORT: ${PORT}`))
             })
-        ```
+        
     * configure app view engine & nunjucks rendering
         * ```javascript
                 var env = nunjucks.configure('views', {noCache: true});
                 app.set('view engine', 'html');
                 app.engine('html', nunjucks.render);
-        ```
+        
     
 
         
