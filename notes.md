@@ -35,7 +35,15 @@
           
     * set up middleware
         * ```javascript
-            app.use(morgan('dev'));
+            app.use((error, req, res, next) => {
+               
+                error.status = error.status || 500;
+                error.message = error.message || 'Internal Error';
+                res.render('error', {error})
+            });
+        * or with a package like morgan
+            * ```javascript
+                app.use(morgan('dev'));
     * set up body-parse
         * ```javascript
                 app.use(bodyParser.urlencoded({ extended: true }));
