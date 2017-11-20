@@ -91,6 +91,48 @@
             * IMPORTANT: Remember that if you sync table originally, then set up a relationship, use force:true on the next sync or else your relationship column (Ex: OwnerId) won't populate your table
 
 
+## Error Handling with MiddleWare:
+Basic Error handling using middleware
+
+```javascript
+    var express = require('express');
+    var app = express();
+    var router = express.Router();
+
+    router.get('/',function(req,res) {
+    res.send("Hello World!");
+    });
+
+    app.use('/',router);
+
+    app.use(function(err,req,res,next) {
+    console.log(err.stack);
+    res.status(500).send({"Error" : err.stack});
+    });
+
+    app.listen(3000);
+```
+
+In Class Version of error handling:
+```javascript
+    app.use((error, req, res, next) => {            
+            error.status = error.status || 500;
+            error.message = error.message || 'Internal Error';
+            res.render('error', {error})
+        });
+```
+## Using Next() with middleware functions
+
+Middleware functions have access to the request and response bodies and the next middleware function in the applications request-response cycle
+
+* They Can:
+    * Execute any code.
+    * Make changes to the request and the response objects.
+    * End the request-response cycle.
+    * Call the next middleware function in the stack.
+
+
+
 
 
         
