@@ -144,7 +144,8 @@ https://expressjs.com/en/guide/writing-middleware.html
 ## FSA Sequelize Reference
 https://github.com/bryanhclark/sequelize-reference
 
-
+## Owen's Express/Sequelize Reference
+https://github.com/ohagert1/Express-Sequelize-Boilerplate-Study-Guide
 
 
 
