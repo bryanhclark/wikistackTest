@@ -131,6 +131,20 @@ Middleware functions have access to the request and response bodies and the next
     * End the request-response cycle.
     * Call the next middleware function in the stack.
 
+## Sequelize Methods Lookup
+https://blog.cloudboost.io/docs-for-the-sequelize-docs-querying-edition-aed4bd1273f0
+
+## Express middleware
+using middleware
+http://expressjs.com/en/guide/using-middleware.html
+
+Writing middleware
+https://expressjs.com/en/guide/writing-middleware.html
+
+## FSA Sequelize Reference
+https://github.com/bryanhclark/sequelize-reference
+
+
 
 
 
