@@ -148,6 +148,9 @@ https://github.com/bryanhclark/sequelize-reference
 https://github.com/ohagert1/Express-Sequelize-Boilerplate-Study-Guide
 
 
+## random stuff to remember
+
+* You can query in .destroy
 
 
         
